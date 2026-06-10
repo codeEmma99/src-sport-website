@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Pentecost University SRC Sport Website</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="images/pentecost-university-logo.png" alt="Pentecost University logo"> <span>Pentecost University SRC Sport Website</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a aria-current="page" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="activities.html">New Activities</a>
+      <a href="events.html">Events</a>
+      <a href="teams.html">Teams</a>
+      <a href="blog.html">Blog</a>
+      <a href="register.html">Register</a>
+      <a href="book.html">Book Online</a>
+    </nav>
+    <form class="site-search" data-site-search role="search">
+      <label class="sr-only" for="site-search">Search the site</label>
+      <input id="site-search" name="q" type="search" placeholder="Search sports or pages" autocomplete="off">
+      <button type="submit">Search</button>
+      <div class="search-results" data-search-results aria-live="polite"></div>
+    </form>
+  </header>
+
+  <main id="top">
+    <section class="hero media-hero">
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=1800&q=85">
+        <source src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Girls_football_training.webm" type="video/webm">
+      </video>
+      <img
+        src="https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=1800&q=85"
+        alt="Football players training on a grass field"
+      >
+      <div class="hero-copy">
+        <p class="eyebrow">University and community sports development</p>
+        <h1>Pentecost University SRC Sport Website</h1>
+        <p>Coaching, competition, and community programs for athletes ready to train with purpose.</p>
+        <div class="button-row">
+          <a class="button" href="register.html">Register Now</a>
+          <a class="button ghost" href="book.html">Book a Session</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Clean training pathway</p>
+        <h2>Skill development, fitness, events, and sports news in one academy hub.</h2>
+      </div>
+      <p>
+        Pentecost University SRC Sport Website supports students and community athletes through structured coaching,
+        inclusive access, modern facilities, and links to current sports activities.
+      </p>
+    </section>
+
+    <section class="programs" aria-labelledby="programs-title">
+      <div class="section-heading">
+        <p class="eyebrow">Academy services</p>
+        <h2 id="programs-title">Training built around real participation</h2>
+      </div>
+
+      <div class="program-grid">
+        <article class="program-card">
+          <img
+            src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=900&q=80"
+            alt="Soccer players competing for the ball during a match"
+          >
+          <div>
+            <h3>Team Sports Coaching</h3>
+            <p>Football, basketball, volleyball, and group sessions that build match awareness and confidence.</p>
+          </div>
+        </article>
+
+        <article class="program-card">
+          <img
+            src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=900&q=80"
+            alt="Runner training on a track at sunset"
+          >
+          <div>
+            <h3>Fitness & Conditioning</h3>
+            <p>Speed, agility, mobility, recovery, and strength sessions for athletes across different sports.</p>
+          </div>
+        </article>
+
+        <article class="program-card">
+          <img
+            src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=900&q=80"
+            alt="Basketball player jumping toward the basket indoors"
+          >
+          <div>
+            <h3>Events & Highlights</h3>
+            <p>Campus tournaments, sports festivals, community fixtures, and athlete achievement updates.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="split-section">
+      <div class="feature-copy">
+        <p class="eyebrow">Interactive academy hub</p>
+        <h2>Pick a focus and see what your session includes.</h2>
+        <p>
+          Use the selector to compare sports pathways, coaching points, training intensity, and the next
+          step for each activity.
+        </p>
+      </div>
+      <div class="interactive-panel" data-sport-panel>
+        <div class="tab-list" role="group" aria-label="Sports focus selector">
+          <button class="sport-tab active" type="button" data-sport="football">Football</button>
+          <button class="sport-tab" type="button" data-sport="basketball">Basketball</button>
+          <button class="sport-tab" type="button" data-sport="volleyball">Volleyball</button>
+          <button class="sport-tab" type="button" data-sport="wrestling">Wrestling</button>
+          <button class="sport-tab" type="button" data-sport="taekwondo">Taekwondo</button>
+          <button class="sport-tab" type="button" data-sport="judo">Judo</button>
+          <button class="sport-tab" type="button" data-sport="rugby">Rugby</button>
+          <button class="sport-tab" type="button" data-sport="ballet">Ballet</button>
+          <button class="sport-tab" type="button" data-sport="table-tennis">Table Tennis</button>
+          <button class="sport-tab" type="button" data-sport="handball">Handball</button>
+          <button class="sport-tab" type="button" data-sport="gymnastics">Gymnastics</button>
+          <button class="sport-tab" type="button" data-sport="fitness">Fitness</button>
+        </div>
+        <img data-sport-image src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1000&q=85" alt="Football players competing during a match">
+        <div class="sport-info">
+          <p class="post-meta" data-sport-tag>Team training</p>
+          <h3 data-sport-title>Football development pathway</h3>
+          <p data-sport-text>Ball control, passing, tactical movement, match communication, and small-sided games.</p>
+          <label for="sport-progress">Session intensity</label>
+          <progress id="sport-progress" data-sport-progress value="76" max="100">76%</progress>
+          <a class="button dark" data-sport-link href="book.html">Book Football</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sports-directory" aria-labelledby="all-sports-title">
+      <div class="section-heading">
+        <p class="eyebrow">All sports offered</p>
+        <h2 id="all-sports-title">Every Pentecost University SRC Sport Website pathway</h2>
+      </div>
+      <div class="directory-grid full">
+        <a href="book.html">Football</a>
+        <a href="book.html">Rugby</a>
+        <a href="book.html">Ballet</a>
+        <a href="book.html">Table Tennis</a>
+        <a href="book.html">Handball</a>
+        <a href="book.html">Gymnastics</a>
+        <a href="book.html">Wrestling</a>
+        <a href="book.html">Taekwondo</a>
+        <a href="book.html">Judo</a>
+        <a href="book.html">Volleyball</a>
+      </div>
+    </section>
+
+    <section class="quiz-section" aria-labelledby="quiz-title">
+      <div>
+        <p class="eyebrow">Quick match</p>
+        <h2 id="quiz-title">Find a suggested program</h2>
+        <p>Choose your goal and the page will recommend a training path.</p>
+      </div>
+      <form class="quiz-card" data-quiz-form>
+        <label for="goal">Main goal</label>
+        <select id="goal" name="goal" required>
+          <option value="">Choose your goal</option>
+          <option value="team">Play better in a team</option>
+          <option value="strength">Build strength and confidence</option>
+          <option value="fitness">Improve speed and conditioning</option>
+          <option value="new">Try a new activity</option>
+        </select>
+        <button class="button" type="submit">Show Match</button>
+        <p class="quiz-result" data-quiz-result aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="counter-band" aria-labelledby="counter-title">
+      <div>
+        <p class="eyebrow">Visitor counter</p>
+        <h2 id="counter-title">Academy page visits</h2>
+      </div>
+      <p class="counter" data-counter>0</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Pentecost University SRC Sport Website</p>
+      <p>Training, events, booking, team management, and community sports engagement.</p>
+    </div>
+    <div class="social-links" role="navigation" aria-label="Social media links">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>

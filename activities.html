@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Activities | Pentecost University SRC Sport Website</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="images/pentecost-university-logo.png" alt="Pentecost University logo"> <span>Pentecost University SRC Sport Website</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a aria-current="page" href="activities.html">New Activities</a>
+      <a href="events.html">Events</a>
+      <a href="teams.html">Teams</a>
+      <a href="blog.html">Blog</a>
+      <a href="register.html">Register</a>
+      <a href="book.html">Book Online</a>
+    </nav>
+    <form class="site-search" data-site-search role="search">
+      <label class="sr-only" for="site-search">Search the site</label>
+      <input id="site-search" name="q" type="search" placeholder="Search sports or pages" autocomplete="off">
+      <button type="submit">Search</button>
+      <div class="search-results" data-search-results aria-live="polite"></div>
+    </form>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1600&q=85" alt="Martial arts athletes training on mats">
+      <div>
+        <p class="eyebrow">New activities</p>
+        <h1>More ways to train, compete, and belong.</h1>
+      </div>
+    </section>
+
+    <section class="programs">
+      <div class="section-heading">
+        <p class="eyebrow">New sports</p>
+        <h2>Programs added for wider participation</h2>
+      </div>
+      <div class="activity-grid">
+        <article class="program-card" data-activity-card>
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80" alt="Athletes practicing wrestling style conditioning in a gym">
+          <div><h3>Wrestling</h3><p>Strength, control, mat movement, balance, and supervised partner drills.</p></div>
+        </article>
+        <article class="program-card" data-activity-card>
+          <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=900&q=80" alt="Martial arts athletes practicing kicks in uniform">
+          <div><h3>Taekwondo</h3><p>Kicking technique, discipline, sparring basics, flexibility, and confidence building.</p></div>
+        </article>
+        <article class="program-card" data-activity-card>
+          <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Athletes practicing strength training for combat sports">
+          <div><h3>Judo</h3><p>Breakfalls, grips, throwing mechanics, respectful practice, and safe progression.</p></div>
+        </article>
+        <article class="program-card" data-activity-card>
+          <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=900&q=80" alt="Volleyball players jumping at the net outdoors">
+          <div><h3>Volleyball</h3><p>Serving, passing, setting, court rotation, teamwork, and friendly competition.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sports-directory" aria-labelledby="directory-title">
+      <div class="section-heading">
+        <p class="eyebrow">Complete sports list</p>
+        <h2 id="directory-title">Every sport included on the website</h2>
+      </div>
+      <div class="directory-grid">
+        <a href="book.html">Football</a>
+        <a href="book.html">Rugby</a>
+        <a href="book.html">Ballet</a>
+        <a href="book.html">Table Tennis</a>
+        <a href="book.html">Handball</a>
+        <a href="book.html">Gymnastics</a>
+        <a href="book.html">Wrestling</a>
+        <a href="book.html">Taekwondo</a>
+        <a href="book.html">Judo</a>
+        <a href="book.html">Volleyball</a>
+      </div>
+    </section>
+
+    <section class="forum" aria-labelledby="forum-title">
+      <div class="section-heading">
+        <p class="eyebrow">Community Q&A</p>
+        <h2 id="forum-title">Ask about activities</h2>
+      </div>
+      <form class="inline-form" data-forum-form>
+        <label for="question">Question or idea</label>
+        <textarea id="question" name="question" rows="4" required placeholder="Ask about training times, equipment, or suggest an activity"></textarea>
+        <button class="button" type="submit">Post Question</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+      <div class="question-list" data-question-list>
+        <article><h3>What equipment is needed for taekwondo?</h3><p>Comfortable training clothes are enough for the first session. Protective gear is introduced before sparring.</p></article>
+        <article><h3>Can beginners join volleyball?</h3><p>Yes. Beginner sessions focus on ball control, movement, and learning court positions.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Pentecost University SRC Sport Website</p>
+      <p>Training, events, booking, team management, and community sports engagement.</p>
+    </div>
+    <div class="social-links" role="navigation" aria-label="Social media links">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>

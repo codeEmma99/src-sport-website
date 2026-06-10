@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teams | Pentecost University SRC Sport Website</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="images/pentecost-university-logo.png" alt="Pentecost University logo"> <span>Pentecost University SRC Sport Website</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="activities.html">New Activities</a>
+      <a href="events.html">Events</a>
+      <a aria-current="page" href="teams.html">Teams</a>
+      <a href="blog.html">Blog</a>
+      <a href="register.html">Register</a>
+      <a href="book.html">Book Online</a>
+    </nav>
+    <form class="site-search" data-site-search role="search">
+      <label class="sr-only" for="site-search">Search the site</label>
+      <input id="site-search" name="q" type="search" placeholder="Search sports or pages" autocomplete="off">
+      <button type="submit">Search</button>
+      <div class="search-results" data-search-results aria-live="polite"></div>
+    </form>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <img src="https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?auto=format&fit=crop&w=1600&q=85" alt="Sports team standing together outdoors">
+      <div>
+        <p class="eyebrow">Teams and profiles</p>
+        <h1>Structured content for coaches, schedules, teams, and player profiles.</h1>
+      </div>
+    </section>
+
+    <section class="teams-section">
+      <div class="section-heading">
+        <p class="eyebrow">Coach dashboard concept</p>
+        <h2>Team management content</h2>
+      </div>
+      <div class="team-grid">
+        <article class="team-card">
+          <h3>Football Development Squad</h3>
+          <p>Coach: Mensah Boateng</p>
+          <p>Training: Monday and Thursday, 3:00 PM</p>
+          <button type="button" data-roster-toggle>View Player Profile</button>
+          <div class="roster-panel" hidden>
+            <p><strong>Player:</strong> Ama Owusu</p>
+            <p><strong>Role:</strong> Midfielder</p>
+            <p><strong>Focus:</strong> First touch, stamina, and passing range.</p>
+          </div>
+        </article>
+        <article class="team-card">
+          <h3>Volleyball Beginners Group</h3>
+          <p>Coach: Linda Agyapong</p>
+          <p>Training: Wednesday, 10:00 AM</p>
+          <button type="button" data-roster-toggle>View Player Profile</button>
+          <div class="roster-panel" hidden>
+            <p><strong>Player:</strong> Kofi Addo</p>
+            <p><strong>Role:</strong> Setter</p>
+            <p><strong>Focus:</strong> Footwork, communication, and serve receive.</p>
+          </div>
+        </article>
+        <article class="team-card">
+          <h3>Combat Sports Group</h3>
+          <p>Coach: Nana Frimpong</p>
+          <p>Training: Friday, 1:30 PM</p>
+          <button type="button" data-roster-toggle>View Player Profile</button>
+          <div class="roster-panel" hidden>
+            <p><strong>Player:</strong> Esi Mensima</p>
+            <p><strong>Role:</strong> Taekwondo beginner</p>
+            <p><strong>Focus:</strong> Flexibility, balance, and controlled kicking.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Pentecost University SRC Sport Website</p>
+      <p>Training, events, booking, team management, and community sports engagement.</p>
+    </div>
+    <div class="social-links" role="navigation" aria-label="Social media links">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>

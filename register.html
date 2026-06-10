@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Pentecost University SRC Sport Website</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="images/pentecost-university-logo.png" alt="Pentecost University logo"> <span>Pentecost University SRC Sport Website</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="activities.html">New Activities</a>
+      <a href="events.html">Events</a>
+      <a href="teams.html">Teams</a>
+      <a href="blog.html">Blog</a>
+      <a aria-current="page" href="register.html">Register</a>
+      <a href="book.html">Book Online</a>
+    </nav>
+    <form class="site-search" data-site-search role="search">
+      <label class="sr-only" for="site-search">Search the site</label>
+      <input id="site-search" name="q" type="search" placeholder="Search sports or pages" autocomplete="off">
+      <button type="submit">Search</button>
+      <div class="search-results" data-search-results aria-live="polite"></div>
+    </form>
+  </header>
+
+  <main>
+    <section class="form-layout">
+      <div class="form-copy">
+        <p class="eyebrow">Register page</p>
+        <h1>Start your academy membership.</h1>
+        <p>Complete the form to join a program. A simulated email confirmation appears after successful validation.</p>
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=85" alt="Coach helping an athlete train in a gym">
+      </div>
+
+      <form class="form-card" data-validated-form data-form-type="registration" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="sport">Preferred sport</label>
+        <select id="sport" name="sport" required>
+          <option value="">Select a sport</option>
+          <option>Football</option>
+          <option>Rugby</option>
+          <option>Ballet</option>
+          <option>Table Tennis</option>
+          <option>Handball</option>
+          <option>Gymnastics</option>
+          <option>Wrestling</option>
+          <option>Taekwondo</option>
+          <option>Judo</option>
+          <option>Volleyball</option>
+        </select>
+
+        <label for="level">Experience level</label>
+        <select id="level" name="level" required>
+          <option value="">Select your level</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+
+        <label class="check-row">
+          <input type="checkbox" name="subscribe">
+          <span>Email me academy updates and event announcements.</span>
+        </label>
+
+        <div class="captcha" data-captcha>
+          <label for="captcha-register">CAPTCHA: what is <span data-captcha-question>3 + 4</span>?</label>
+          <input id="captcha-register" name="captcha" type="number" inputmode="numeric" required>
+        </div>
+
+        <button class="button" type="submit">Submit Registration</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Pentecost University SRC Sport Website</p>
+      <p>Training, events, booking, team management, and community sports engagement.</p>
+    </div>
+    <div class="social-links" role="navigation" aria-label="Social media links">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
